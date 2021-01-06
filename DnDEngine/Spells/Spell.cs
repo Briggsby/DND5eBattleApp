@@ -1,5 +1,11 @@
+using System.Diagnostics;
+using System.Collections.Generic;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public abstract class SpellCreator
     {
         public abstract Spell CreateSpell();

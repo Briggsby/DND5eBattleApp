@@ -1,5 +1,13 @@
+using System;
+using System.Diagnostics;
+using System.Collections.Generic;
+using System.Linq;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     // TODO: This should be a large JSON, not code
     public class SRDLibrary : Library
     {
@@ -2161,7 +2169,7 @@ namespace DND5E_Battle_Sim
 
             };
 
-            public Dictionary<string, Spell.TargetType> targetType = new Dictionary<string, Spell.TargetType>()
+            public Dictionary<string, Spell.TargetType> targetTypes = new Dictionary<string, Spell.TargetType>()
             {
                 {DragonTypes.Black.ToString(), Spell.TargetType.Line },
                 {DragonTypes.Blue.ToString(),  Spell.TargetType.Line },
@@ -2206,7 +2214,7 @@ namespace DND5E_Battle_Sim
             {
                 Spell spell = new DragonBreath();
                 spell.damageTypes[0] = damageType[choice].ToString();
-                spell.targetType = targetType[choice];
+                spell.targetType = targetTypes[choice];
                 if (spell.targetType == Spell.TargetType.Cone)
                 {
                     spell.width = 15;
@@ -2759,7 +2767,7 @@ namespace DND5E_Battle_Sim
 
         public class RageFeat : Feat
         {
-            public int MaxUses
+            public new int MaxUses
             {
                 get
                 {
@@ -6843,7 +6851,7 @@ namespace DND5E_Battle_Sim
                 weaponMainHand = new Scimitar();
                 if (DnDManager.monsterTextures.ContainsKey(Monsters.Cultist.ToString()))
                 {
-                    Texture = DnDManager.monsterTextures[Monsters.CultFanatic.ToString()];
+                    Texture = DnDManager.monsterTextures[Monsters.Cultist.ToString()];
                 }
                 RecalibrateStats();
                 ResetHP();
@@ -6894,9 +6902,9 @@ namespace DND5E_Battle_Sim
                         new InflictWounds(), new ShieldOfFaith(),
                         new HoldPerson(), new SpiritualWeapon(),
                     }, this, Stats.Wisdom);
-                if (DnDManager.monsterTextures.ContainsKey(Monsters.CultFanatic.ToString()))
+                if (DnDManager.monsterTextures.ContainsKey(Monsters.Cultist.ToString()))
                 {
-                    Texture = DnDManager.monsterTextures[Monsters.CultFanatic.ToString()];
+                    Texture = DnDManager.monsterTextures[Monsters.Cultist.ToString()];
                 }
 
                 AddFeat(new DarkDevotion());

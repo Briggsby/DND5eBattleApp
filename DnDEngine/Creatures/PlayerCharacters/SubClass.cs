@@ -1,5 +1,8 @@
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public class SubClass
     {
         public string parentClass;
@@ -11,7 +14,7 @@ namespace DND5E_Battle_Sim
             //Debug.WriteLine(string.Format("Assigning {0} subclass", name));
             for (int l = 0; l <= level; l++)
             {
-                if (feats.Keys.Contains(l))
+                if (feats.ContainsKey(l))
                 {
                     foreach (string fc in feats[l])
                     {

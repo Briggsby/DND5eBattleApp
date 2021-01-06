@@ -1,5 +1,8 @@
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public class SubSpecies
     {
         public string name;

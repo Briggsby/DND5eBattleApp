@@ -1,5 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Xna.Framework;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     enum CombatActions { Move, Attack, CastSpell, Dash, Disengage, Dodge, Help, Hide, Search, UseObject, UseFeat, SpellChildMenu }
     public enum CreatureMenuOtherOptions { StatMenu, ChangeName, ChangeStats, AddItem, ChangeWeapon, AddFeat, ChooseLanguage, ChooseSkill, ChooseItems, FeatChoices, EquipItem, ChooseWeapon, UseFeatChildMenu };
 

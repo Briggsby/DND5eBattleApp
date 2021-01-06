@@ -1,5 +1,11 @@
+using System.Linq;
+using System.Collections.Generic;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public enum QuickCharacterChoices { Species, SubSpecies, Class, SubClass, Level}
 
     public class PlayerCharacter : Creature

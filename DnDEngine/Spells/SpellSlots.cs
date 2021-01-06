@@ -1,5 +1,8 @@
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public enum SpellCasterType { Full, Half, Third, Warlock, None };
 
     public class SpellSlots

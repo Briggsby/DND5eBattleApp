@@ -1,3 +1,6 @@
+using System;
+
+
 namespace DND5E_Battle_Sim
 {
     public enum ArmorCategories { None, LightArmor, MediumArmor, HeavyArmor, Shields };

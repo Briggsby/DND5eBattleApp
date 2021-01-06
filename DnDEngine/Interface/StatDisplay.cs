@@ -1,3 +1,10 @@
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
 { 
     public class StatDisplay : GameObject

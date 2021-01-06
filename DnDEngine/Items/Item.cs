@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
 {
     public enum ItemType { AdventuringGear, Tools, Kits, Weapon, Armor, WondrousItem };

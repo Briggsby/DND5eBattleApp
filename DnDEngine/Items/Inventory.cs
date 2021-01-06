@@ -1,5 +1,11 @@
+using System;
+using System.Collections.Generic;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public class Inventory
     {
         public Creature creature;
@@ -42,7 +48,7 @@ namespace DND5E_Battle_Sim
 
             foreach (Item item in items)
             {
-                if (itemAmounts.Keys.Contains(item.GetType()))
+                if (itemAmounts.ContainsKey(item.GetType()))
                 {
                     itemAmounts[item.GetType()]++;
                 }
@@ -76,7 +82,7 @@ namespace DND5E_Battle_Sim
 
         public void SortItem(Item item)
         {
-            if (itemAmounts.Keys.Contains(item.GetType()))
+            if (itemAmounts.ContainsKey(item.GetType()))
             {
                 itemAmounts[item.GetType()]++;
             }

@@ -1,5 +1,11 @@
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public class EncounterControlsContextMenu : ContextMenu
     {
         BoardTile tile;

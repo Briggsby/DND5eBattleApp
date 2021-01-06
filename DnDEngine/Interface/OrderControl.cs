@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+
+
 namespace DND5E_Battle_Sim
 { 
     public enum TileOrderCriteria { WithoutCreature, WithCreature }

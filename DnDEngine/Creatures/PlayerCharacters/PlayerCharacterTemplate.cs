@@ -1,6 +1,8 @@
+using System.Collections.Generic;
+
 
 namespace DND5E_Battle_Sim
-{ 
+{
     public class PlayerCharacterTemplate
     {
         public Dictionary<PlayerClass, int> classes;

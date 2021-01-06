@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
 {
     public class Shield : Weapon

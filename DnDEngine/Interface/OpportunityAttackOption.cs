@@ -1,5 +1,11 @@
+using System.Collections;
+using Microsoft.Xna.Framework;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public class OpportunityAttackOption : DisplayOptions
     {
         public static DisplayOptionsTextureSet opportunityAttackTextureSet;

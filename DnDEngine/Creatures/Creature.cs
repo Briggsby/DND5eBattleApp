@@ -1,3 +1,14 @@
+using System;
+using System.Diagnostics;
+using System.Collections;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
 { 
     public enum Alignment { NeutralEvil, Neutral, LawfulEvil }
@@ -492,12 +503,12 @@ namespace DND5E_Battle_Sim
         public bool CheckFeat(string form)
         {
             Type type;
-            if (DnDManager.feats.Keys.Contains(form))
+            if (DnDManager.feats.ContainsKey(form))
             {
                 Feat exampleFeat = DnDManager.feats[form].CreateFeat();
                 type = exampleFeat.GetType();
             }
-            if (DnDManager.conditions.Keys.Contains(form))
+            if (DnDManager.conditions.ContainsKey(form))
             {
                 Condition exampleCondition = DnDManager.conditions[form].CreateCondition();
                 type = exampleCondition.GetType();
@@ -796,7 +807,7 @@ namespace DND5E_Battle_Sim
         public int ClassLevel(string playerClass)
         {
             PlayerClass playerClassExample = DnDManager.classes[playerClass];
-            if (classes.Keys.Contains(playerClassExample))
+            if (classes.ContainsKey(playerClassExample))
             {
                 return classes[playerClassExample];
             }

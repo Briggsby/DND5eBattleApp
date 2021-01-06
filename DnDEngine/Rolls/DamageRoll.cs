@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
+
+
 namespace DND5E_Battle_Sim
 {
     public class DamageRoll : Roll

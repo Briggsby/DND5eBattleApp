@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
 {
 

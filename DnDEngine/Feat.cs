@@ -1,5 +1,12 @@
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public enum FeatTriggerType { Attack, Damage, GetHit }
 
     public struct FeatTriggerDetails

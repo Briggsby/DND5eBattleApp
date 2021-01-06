@@ -42,9 +42,88 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DnDEngine\Attack.cs" />
+    <Compile Include="DnDEngine\Board.cs" />
+    <Compile Include="DnDEngine\BoardTile.cs" />
+    <Compile Include="DnDEngine\Condition.cs" />
+    <Compile Include="DnDEngine\Controls\AttackOrder.cs" />
+    <Compile Include="DnDEngine\Controls\Control.cs" />
+    <Compile Include="DnDEngine\Controls\DirectionalAreaOrder.cs" />
+    <Compile Include="DnDEngine\Controls\MoveOrder.cs" />
+    <Compile Include="DnDEngine\Controls\SingleNormalTargetOrder.cs" />
+    <Compile Include="DnDEngine\Controls\SpellSingleNormalTargetOrder.cs" />
+    <Compile Include="DnDEngine\Creatures\BaseStats.cs" />
+    <Compile Include="DnDEngine\Creatures\Creature.cs" />
+    <Compile Include="DnDEngine\Creatures\CreatureCreator.cs" />
+    <Compile Include="DnDEngine\Creatures\Monster.cs" />
+    <Compile Include="DnDEngine\Creatures\PlayerCharacters\Background.cs" />
+    <Compile Include="DnDEngine\Creatures\PlayerCharacters\PlayerCharacter.cs" />
+    <Compile Include="DnDEngine\Creatures\PlayerCharacters\PlayerCharacterTemplate.cs" />
+    <Compile Include="DnDEngine\Creatures\PlayerCharacters\PlayerClass.cs" />
+    <Compile Include="DnDEngine\Creatures\PlayerCharacters\SubClass.cs" />
+    <Compile Include="DnDEngine\Creatures\Species.cs" />
+    <Compile Include="DnDEngine\Creatures\SubSpecies.cs" />
+    <Compile Include="DnDEngine\DisplayOptionsDnD.cs" />
+    <Compile Include="DnDEngine\DnDManager.cs" />
+    <Compile Include="DnDEngine\Encounter.cs" />
+    <Compile Include="DnDEngine\Feat.cs" />
+    <Compile Include="DnDEngine\Interface\CharacterCreationMenu.cs" />
+    <Compile Include="DnDEngine\Interface\CreatureContextMenu.cs" />
+    <Compile Include="DnDEngine\Interface\EncounterControlsContextMenu.cs" />
+    <Compile Include="DnDEngine\Interface\OpportunityAttackOption.cs" />
+    <Compile Include="DnDEngine\Interface\OrderControl.cs" />
+    <Compile Include="DnDEngine\Interface\StatDisplay.cs" />
+    <Compile Include="DnDEngine\Items\AdventurersGear.cs" />
+    <Compile Include="DnDEngine\Items\Ammunition.cs" />
+    <Compile Include="DnDEngine\Items\Armor.cs" />
+    <Compile Include="DnDEngine\Items\Inventory.cs" />
+    <Compile Include="DnDEngine\Items\Item.cs" />
+    <Compile Include="DnDEngine\Items\ItemFeat.cs" />
+    <Compile Include="DnDEngine\Items\Pack.cs" />
+    <Compile Include="DnDEngine\Items\Shield.cs" />
+    <Compile Include="DnDEngine\Items\SpellcastingFocus.cs" />
+    <Compile Include="DnDEngine\Items\Tool.cs" />
+    <Compile Include="DnDEngine\Items\Weapon.cs" />
+    <Compile Include="DnDEngine\Items\WondrousItem.cs" />
+    <Compile Include="DnDEngine\Libraries\SRDLibrary.cs" />
+    <Compile Include="DnDEngine\Library.cs" />
+    <Compile Include="DnDEngine\Rolls\AbilityCheck.cs" />
+    <Compile Include="DnDEngine\Rolls\AttackRoll.cs" />
+    <Compile Include="DnDEngine\Rolls\Contest.cs" />
+    <Compile Include="DnDEngine\Rolls\DamageRoll.cs" />
+    <Compile Include="DnDEngine\Rolls\HealingRoll.cs" />
+    <Compile Include="DnDEngine\Rolls\InitiativeRoll.cs" />
+    <Compile Include="DnDEngine\Rolls\OldRoll.cs" />
+    <Compile Include="DnDEngine\Rolls\Roll.cs" />
+    <Compile Include="DnDEngine\Rolls\SavingThrow.cs" />
+    <Compile Include="DnDEngine\Spells\Spell.cs" />
+    <Compile Include="DnDEngine\Spells\SpellBook.cs" />
+    <Compile Include="DnDEngine\Spells\SpellSlots.cs" />
+    <Compile Include="Engine\Button.cs" />
+    <Compile Include="Engine\ButtonTextures.cs" />
+    <Compile Include="Engine\Camera.cs" />
+    <Compile Include="Engine\ContextMenu.cs" />
+    <Compile Include="Engine\ContextMenuItem.cs" />
+    <Compile Include="Engine\ContextMenuTemplate.cs" />
+    <Compile Include="Engine\Controls.cs" />
+    <Compile Include="Engine\Coroutine.cs" />
+    <Compile Include="Engine\DisplayOptions.cs" />
+    <Compile Include="Engine\DisplayOptionsTextureSets.cs" />
+    <Compile Include="Engine\DropDownMenu.cs" />
+    <Compile Include="Engine\EngManager.cs" />
+    <Compile Include="Engine\GameObject.cs" />
+    <Compile Include="Engine\Hitbox.cs" />
+    <Compile Include="Engine\MultipleHitbox.cs" />
+    <Compile Include="Engine\ObjectManager.cs" />
+    <Compile Include="Engine\OldScrollArea.cs" />
+    <Compile Include="Engine\RectangleHitbox.cs" />
+    <Compile Include="Engine\ScissorArea.cs" />
+    <Compile Include="Engine\ScrollMenu.cs" />
+    <Compile Include="Engine\ScrollMenuTemplate.cs" />
+    <Compile Include="Engine\TextField.cs" />
+    <Compile Include="Engine\TextObject.cs" />
+    <Compile Include="Engine\Transform.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="Library.cs" />
-    <Compile Include="MyEngine2D.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +184,7 @@
       <Link>MonoGame.Framework.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include=".gitignore" />
     <None Include="app.manifest" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

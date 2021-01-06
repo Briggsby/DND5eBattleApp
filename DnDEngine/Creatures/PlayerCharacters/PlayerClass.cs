@@ -1,5 +1,9 @@
+using System;
+using System.Collections.Generic;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public abstract class PlayerClassCreator
     {
         public abstract PlayerClass CreatePlayerClass();
@@ -59,7 +63,7 @@ namespace DND5E_Battle_Sim
 
             for (int l = 0; l <= level; l++)
             {
-                if (feats.Keys.Contains(l))
+                if (feats.ContainsKey(l))
                 {
                     foreach (string fc in feats[l])
                     {

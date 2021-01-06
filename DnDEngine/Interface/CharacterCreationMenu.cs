@@ -1,5 +1,12 @@
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+
+using BugsbyEngine;
+
+
 namespace DND5E_Battle_Sim
-{ 
+{
     public enum CharacterCreationMenuComponents { Name, Species, SubSpecies, Class, Subclass, Stats, Level, }
 
     public class CharacterCreationMenu : GameObject

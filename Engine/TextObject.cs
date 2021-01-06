@@ -1,13 +1,5 @@
-using System;
-using System.Linq;
-using System.Diagnostics;
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 
 namespace BugsbyEngine
 {
@@ -20,7 +12,7 @@ namespace BugsbyEngine
         public string Text
         {
             get { return text; }
-            set { text = value;  }
+            set { text = value; }
         }
         public SpriteFont font;
 
@@ -48,13 +40,13 @@ namespace BugsbyEngine
 
         }
 
-        public Vector2 TextPosition(TextRelativePosition textRelativePosition = TextRelativePosition.Null) 
+        public Vector2 TextPosition(TextRelativePosition textRelativePosition = TextRelativePosition.Null)
         {
             if (textRelativePosition == TextRelativePosition.Null)
             {
                 textRelativePosition = this.textRelativePosition;
             }
-            switch(textRelativePosition)
+            switch (textRelativePosition)
             {
                 case (TextRelativePosition.Left):
                     return transform.GlobalPosition;
@@ -64,10 +56,11 @@ namespace BugsbyEngine
             return transform.GlobalPosition;
         }
 
-        
+
 
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.DrawString(font, text, TextPosition(), transform.color, transform.rotation, transform.origin, transform.scale, SpriteEffects.None, transform.LayerDepth);
         }
     }
+}
